@@ -1,8 +1,8 @@
 //options to be added
 //var options = ["Not applicable","Satisfied","Improvable (low effort)","Improvable (high effort)", "Unable"];
 //var colors = ['#FFFFFF', '#00FF00', '#FFFF5A' ,'#FFA500' ,'#808080'];
-var options = ["Not applicable","Has the ability","Has not the ability"];
-var colors = ['#CCCCCC', '#FFFFFF', '#000000'];
+var options = ["Not applicable","Has the ability","Does not have the ability"];
+var colors = ['#CCCCCC', '#FFFFFF', '#000000']; //gray: does not apply; white: has the ability; black: does not have the ability
 
 function openAbility(evt, cityName) {
     // Declare all variables
