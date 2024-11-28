@@ -180,132 +180,36 @@
                     "subAbilityLevels": [
                         {
                             "level": 0,
-                            "levelName": "No external perception",
-                            "levelDescription": "Some systems do not sense their environment but simply carry out sets of pre-programmed actions triggered by a starting event. Although there may be safety systems that cause the system to fail-safe these do not alter the operating cycle behaviour."
-                        },
-                        {
-                            "level": 1,
-                            "levelName": "Direct single and multi-parameter sensing",
-                            "levelDescription": "A system uses sensors that provide a single, or multiple parameter output directly. The system utilises these outputs to directly alter behaviour within an operating cycle."
-                        },
-                        {
-                            "level": 2,
-                            "levelName": "Low-level processing parameter sensing",
-                            "levelDescription": "A system may use fixed and known markers in the physical environment (e.g. Barcodes, QR codes, etc). The detection of these markers provides triggers to alter or switch between behaviours or sequences of behaviours."
-                        },
-                        {
-                            "level": 3,
                             "levelName": "Multi-parameter perception",
                             "levelDescription": "A system uses multiple single-parameter sensors to create a unified model of the environment. Sense data can be collected from multiple types of sensor as well as multiple sensors of the same type. Each sensor contributes information to the model. The model is used to alter the behaviour of the system."
                         },
                         {
-                            "level": 4,
+                            "level": 1,
                             "levelName": "Feature-based perception",
                             "levelDescription": "Sense data is gathered from a region of the environment such that the sense data has a spatial mapping. The richness of the sense data information content is such that it is possible to apply feature extraction to the sense data and thereby interpret the content of the sense data as a set or sets of features. The system performs a data reduction with an assumption about the expected features. The presence of features is used to alter behaviour."
                         },
                         {
-                            "level": 5,
+                            "level": 2,
                             "levelName": "Grouped feature detection",
                             "levelDescription": "The sense data gathered from the environment can be processed such that features can be aggregated to capture linkages between features. A group of features may relate to the same real element in the environment, but where the element has not been identified. The characteristics of the feature group can be used to alter the behaviour of the system. For example a set of features of the same colour that move in the same way may relate to a pink ball."
                         },
                         {
-                            "level": 6,
+                            "level": 3,
                             "levelName": "Element identification",
                             "levelDescription": "The system can identify elements or coherent entities that it has detected in the environment through sets of grouped features and can use this identification to alter the system's behavior. The importance of this level is that a data source or a priori element model is required."
                         },
                         {
-                            "level": 7,
+                            "level": 4,
                             "levelName": "Property identification",
                             "levelDescription": "The system is able to deduce the properties of elements in the environment or environment itself and utilise those properties within system behavior."
                         },
                         {
-                            "level": 8,
+                            "level": 5,
                             "levelName": "Hidden state identification",
                             "levelDescription": "The system is able to infer properties of an element or person that are not directly observable. The elements are not fully available in data sources ahead of time and environment interpretation and classification are required."
                         }
                     ]
-                }, 
-				{
-                    "subAbilityName": "Element recognition",
-                    "subAbilityDescription": "This ability may range from being able to recognise instances of a single element, to being able to distinguish between many different elements or even identify elements that fit a generic pattern.",
-                    "subAbilityLevels": [     
-                        {
-                            "level": 0,
-                            "levelName": "No recognition",
-                            "levelDescription": "The system does not need to detect or recognise elements in the environment in order to carry out its task."
-                        },
-                        {
-                            "level": 1,
-                            "levelName": "Feature detection",
-                            "levelDescription": "Sense data is gathered from a region of the environment such that the data has a spatial component and can be mapped to a model of that region. The richness of the sense data is such that it is possible to apply a feature detection process to create a set or sets of features that persist."
-                        },
-                        {
-                            "level": 2,
-                            "levelName": "Element detection",
-                            "levelDescription": "Multiple persistent features can be grouped to build models of distinct elements allowing elements to be differentiated from each other and from the environment."
-                        },
-						{
-                            "level": 3,
-                            "levelName": "Element recognition - single instance",
-                            "levelDescription": "Element models created from sense data can be matched to specific known instances of an element with a reliability that is appropriate to the task."
-                        },
-                        {
-                            "level": 4,
-                            "levelName": "Element recognition - one of many",
-                            "levelDescription": "Element models created from sense data can be matched to one of a number of specific instances of known elements with a reliability that is appropriate to the task."
-                        },
-						{
-                            "level": 5,
-                            "levelName": "Parameterised element recognition",
-                            "levelDescription": "Element models created from sense data can be matched to a number of known, parameterised element types. The settings for the parameters (e.g. size ratio, curvature, joint position etc) can be deduced from the sensed element model. Note that in conjunction with single instance recognition ability this implies the ability to recognise a known (possibly learned) instance of a generic element."
-                        },
-                        {
-                            "level": 6,
-                            "levelName": "Context-based recognition",
-                            "levelDescription": "The system is able to use its knowledge of context or location to improve its ability to recognise elements by reducing ambiguities through expectations based on location or context."
-                        },
-						{
-                            "level": 7,
-                            "levelName": "Element variable recognition",
-                            "levelDescription": "The system is able to recognise elements where there is a degree of variability in the element that approaches the scale of the element. "
-                        },
-                        {
-                            "level": 8,
-                            "levelName": "Novelty recognition",
-                            "levelDescription": "The system is able to recognise novelty in a known element, or parameterised element type."
-                        },
-                        {
-                            "level": 9,
-                            "levelName": "Unknown element categorisation (rigid)",
-                            "levelDescription": "The system is able to assess an unknown rigid element based on sense data and deduce properties that are relevant to the task."
-                        },
-                        {
-                            "level": 10,
-                            "levelName": "Element property detection",
-                            "levelDescription": "It is possible to use sense data and the derived element model to deduce the properties of an element."
-                        },
-                        {
-                            "level": 11,
-                            "levelName": "Flexible element detection",
-                            "levelDescription": "The system is able to detect the shape and form of elements that are deformable and generate parameterised models of flexible elements. This includes articulated elements and elements with flexible and rigid components."
-                        },
-                        {
-                            "level": 12,
-                            "levelName": "Flexible element classification",
-                            "levelDescription": "The system is able to classify flexible elements by their properties and parameters. It is able to recognise specific known elements relevant to the task with an appropriate level of reliability."
-                        },
-                        {
-                            "level": 13,
-                            "levelName": "Animate elements",
-                            "levelDescription": "The system is able to detect animate elements and provide a classification appropriate to the task."
-                        },
-                        {
-                            "level": 14,
-                            "levelName": "Pose estimation of animate elements",
-                            "levelDescription": "The system is able to estimate the pose of an animate element within the environment."
-                        }
-                    ]
-                }
+                } 
             ]
         },
         {
@@ -361,93 +265,6 @@
                             "level": 8,
                             "levelName": "Mission proposals",
                             "levelDescription": "The system is able to propose missions that align with high-level objectives."
-                        }
-                    ]
-                },
-                {
-                    "subAbilityName": "Intepretive",
-                    "subAbilityDescription": "The interpretation of sense data is key to the ability to identify, recognise, classify and parameterize elements in the environment. It particularly refers to the ability to amalgamate multi-modal data into unified high-level element descriptions that create knowledge for tasks to draw on. The ability to interpret also engages knowledge sources to build increasingly complex interpretations of the environment and human interaction, in particular building frameworks of relationships between the environment and elements and between elements.",
-                    "subAbilityLevels": [
-                        {
-                            "level": 0,
-                            "levelName": "No interpretive ability",
-                            "levelDescription": "The system does not need to interpret the environment or user interface actions."
-                        },
-                        {
-                            "level": 1,
-                            "levelName": "Fixed sensory interpretation",
-                            "levelDescription": "The system has a fixed interpretation of the perceptions that occur because they are pre-categorized."
-                        },
-                        {
-                            "level": 2,
-                            "levelName": "Basic environment interpretation",
-                            "levelDescription": "The system uses sensor data to interpret the environment into fixed notions of environmental pre-categorized data."
-                        },
-                        {
-                            "level": 3,
-                            "levelName": "Element delineation",
-                            "levelDescription": "The system is able to disambiguate elements from an interpretation of its environment. The disambiguation of elements is based on built-in notions of elements and the environment. These notions may only be valid within a narrow operating context."
-                        },
-						{
-                            "level": 4,
-                            "levelName": "Element category interpretation",
-                            "levelDescription": "The system is able to interpret the shapes and forms of elements based on categories of elements that are task-relevant. It is able to interpret sense data to identify elements over a timescale appropriate to the task.  Note that this ability level is particularly affected by the Cognition Ability Parameters."
-                        },
-						{
-                            "level": 5,
-                            "levelName": "Structural interpretation",
-                            "levelDescription": "The system is able to interpret perceptions to extract structural information from the environment. It is able to identify the structural relationships between elements in the environment."
-                        },
-                        {
-                            "level": 6,
-                            "levelName": "Basic semantic interpretation",
-                            "levelDescription": "The system is able to apply semantic tags to elements allowing it to plan actions based on functional objectives that depend on the semantics of elements."
-                        },
-                        {
-                            "level": 7,
-                            "levelName": "Property interpretation",
-                            "levelDescription": "The system is able to interpret perceptions to determine the properties of elements in the environment."
-                        },
-                        {
-                            "level": 8,
-                            "levelName": "Novelty interpretation",
-                            "levelDescription": "The system is able to interpret perceptions to identify novelty in elements."
-                        },
-                        {
-                            "level": 9,
-                            "levelName": "Environmental affordance",
-                            "levelDescription": "The system is able to interpret the environment in terms of what it affords."
-                        }
-                    ]
-                },
-				{
-                    "subAbilityName": "Envisioning",
-                    "subAbilityDescription": "Envisioning refers to the ability of the system to assess the impact of actions in the future. This may reduce to prediction but in the higher levels involves an assessment of the impact of observed external events.",
-                    "subAbilityLevels": [
-                        {
-                            "level": 0,
-                            "levelName": "No envisioning ability",
-                            "levelDescription": "The system is not able to predict subsequent states."
-                        },
-                        {
-                            "level": 1,
-                            "levelName": "Function projection",
-                            "levelDescription": "The system is able to project the effect of its function onto the local environment in order to be able to assess its effectiveness."
-                        },
-                        {
-                            "level": 2,
-                            "levelName": "Basic environment envisioning",
-                            "levelDescription": "The system is able to observe events in the environment that relate to the task and envision their impact on the actions of the system itself."
-                        },
-                        {
-                            "level": 3,
-                            "levelName": "Envisioning safety",
-                            "levelDescription": "The system is able to assess the safety implications on users of observed events occurring in the working environment."
-                        },
-                        {
-                            "level": 4,
-                            "levelName": "Envisioning user responses",
-                            "levelDescription": "The system is able to envision the actions of a user responding to events in the environment."
                         }
                     ]
                 },		
@@ -507,8 +324,8 @@
                         }, 
                         {
                             "level": 10,
-                            "levelName": "User knowledge",
-                            "levelDescription": "The system is able to acquire knowledge about the user by observation."
+                            "levelName": "Human knowledge",
+                            "levelDescription": "The system is able to acquire knowledge about the human by observation."
                         },
                         {
                             "level": 11,
@@ -518,7 +335,7 @@
 						{
                             "level": 12,
                             "levelName": "Long-term observation",
-                            "levelDescription": "The system is able to distinguish between long-term and short-term changes in the physical environment and the objects within it and in the human environment."
+                            "levelDescription": "The system is able to distinguish between long-term and short-term changes in the environment and the entities within it."
                         },
 						{
                             "level": 13,
@@ -538,46 +355,41 @@
                     "subAbilityLevels": [
                         {
                             "level": 0,
-                            "levelName": "No reasoning",
-                            "levelDescription": "The system does not carry out any form of reasoning but simply executes a pre-determined pattern of activity."
-                        },
-                        {
-                            "level": 1,
                             "levelName": "Reasoning from sense data",
                             "levelDescription": "The system is able to make basic judgements of sense data sufficient to allow actions to be controlled."
                         },
                         {
-                            "level": 2,
+                            "level": 1,
                             "levelName": "Pre-defined reasoning",
                             "levelDescription": "The system is able to use basic predefined knowledge about structures and elements in the environment to guide action and interaction."
                         },
                         {
-                            "level": 3,
+                            "level": 2,
                             "levelName": "Basic environment reasoning",
                             "levelDescription": "The system is able to use knowledge of the environment gained from perception in conjunction with stored knowledge to reason about the environment."
                         },		
 						{
-                            "level": 4,
+                            "level": 3,
                             "levelName": "Reasoning under uncertainty",
                             "levelDescription": "The system is able to reason under uncertainty, e.g., about the environment and its elements, combining potentially conflicting or incomplete data from disparate sources."
                         },
                         {
-                            "level": 5,
+                            "level": 4,
                             "levelName": "Dynamic reasoning",
                             "levelDescription": "The system is able to reason and operate under uncertainty in a dynamic environment. "
                         },
                         {
-                            "level": 6,
+                            "level": 5,
                             "levelName": "Safety reasoning",
                             "levelDescription": "The system is able to reason about its safely operation in the environment."
                         },
                         {
-                            "level": 7,
+                            "level": 6,
                             "levelName": "Task reasoning",
                             "levelDescription": "The system is able to reason about the appropriate courses of action to achieve a task where there are alternative actions that can be undertaken, exploiting information such as task objectives, time to completion, resource usage, or the desired performance level."
                         },
                         {
-                            "level": 8,
+                            "level": 7,
                             "levelName": "Mission reasoning",
                             "levelDescription": "During the mission execution, the system is able to reason about the priorities of different tasks within the mission and propose priorities based on its knowledge of the mission, the tasks, and environment."
                         }
@@ -588,24 +400,24 @@
                     "subAbilityDescription": "The following levels relate to different levels of human interaction with a system that has a cognitive element. They specifically relate to the interaction between a human and a single system. Where multiple systems are involved a corresponding set of levels applies.",
                     "subAbilityLevels": [
                         {        
-							"level": 0,
+			"level": 0,
                             "levelName": "No cognitive human interaction",
-                            "levelDescription": "Many systems will be able to operate successfully without cognitive interaction with the user."
+                            "levelDescription": "Many systems will be able to operate successfully without cognitive interaction with the human."
                         },
                         {
                             "level": 1,
                             "levelName": "Fixed interaction",
-                            "levelDescription": "Interaction between the user and the system follows a fixed pattern. Typically, this takes place via a user interface with well-defined inputs and outputs. Fixed interaction also includes interaction via a computer-based user interface where interactions directly control the system according to pre-defined sets of commands with specific meaning. The connection between the user and the system may involve a wireless link. Any interpretation of commands is fixed and embedded."
+                            "levelDescription": "Interaction between the human and the system follows a fixed pattern. Typically, this takes place via a user interface with well-defined inputs and outputs. Fixed interaction also includes interaction via a computer-based user interface where interactions directly control the system according to pre-defined sets of commands with specific meaning. The connection between the human and the system may involve a wireless link. Any interpretation of commands is fixed and embedded."
                         },
                         {
                             "level": 2,
                             "levelName": "Task context interaction",
-                            "levelDescription": "The system is able to interpret commands from the user that utilise task context semantics within a domain specific communication framework appropriate to the range of the task. The system is able to relay task status to the user using task context semantics suitable for the task."
+                            "levelDescription": "The system is able to interpret commands from the human that utilise task context semantics within a domain specific communication framework appropriate to the range of the task. The system is able to relay task status to the human using task context semantics suitable for the task."
                         },
                         {
                             "level": 3,
                             "levelName": "Element interaction",
-                            "levelDescription": "The system is able to interpret user interactions that refer to elements as appropriate to the task. This includes the ability to interpret user interactions that identify elements as well as processing commands that reference elements relevant to the task. Dialogues are initiated by the user."
+                            "levelDescription": "The system is able to interpret user interactions that refer to elements as appropriate to the task. This includes the ability to interpret user interactions that identify elements as well as processing commands that reference elements relevant to the task. Dialogues are initiated by the human."
                         },
                         {
                             "level": 4,
@@ -631,42 +443,5 @@
                 }
             ]
         }, 
-	{
-            "abilityName": "Explainability",
-            "abilityDescription": "The explainability is the ability of the system to make the entire control/adaptation process transparent and comprehensible by explicitly providing an explanation to humans. This explanation should be provided for the relevant behavioral aspects of the system’s decision making (i.e., why a control task/adaptation is requested, the reasoning behind a control task/adaptation decision, the effects/outcomes of the control task/adaptation) in a given operating condition (i.e., the observable features of the semantic space – environment and configuration dimensions with their own type and domain) to meet the control/adaptation goals (e.g., satisfy the system-level requirements). These include the use of interpretable models (e.g., linear models or decision trees) and of model-agnostic interpretation tools for local or global explanations.",
-            "hasSubAbilities": false,
-            "abilityLevels": [
-                {
-                    "level": 0,
-                    "levelName": "No explanability",
-                    "levelDescription": "The system does not explain its operating behavior while it adapts itself."
-                },
-                {
-                    "level": 1,
-                    "levelName": "Passive recognition of the need of explainability",
-                    "levelDescription": "The system recognizes that the explanation of a particular behavioral aspect should be provided. Thus, it passively accumulates knowledge about the control/adaptation goals and the operating conditions, which could be used to increase explainability. Defined variables of the semantic space shall be observable and measurable at runtime."
-                },
-                {
-                    "level": 2,
-                    "levelName": "Active recognition of the need of explainability",
-                    "levelDescription": "The system recognizes that the explanation of a particular behavioral aspect should be provided. Thus, it actively accumulates knowledge about the control/adaptation goals and the operating conditions by executing actions that are deliberately designed to increase explainability through exploration methods that extract and derive proper knowledge from the measured variables of the semantic space."
-                },
-                {
-                    "level": 3,
-                    "levelName": "Local aspect explainability",
-                    "levelDescription": "The system explains a selected behavioral aspect of a control/adaptation process that occurs to satisfy the control/adaptation goals in a specific operating condition."
-                },
-                {
-                    "level": 4,
-                    "levelName": "Global aspect explainability",
-                    "levelDescription": "The system explains the average behavior of a control/adaptation process with respect to the satisfaction of the control/adaptation goals under changing operating conditions."
-                },
-				{
-                    "level": 5,
-                    "levelName": "Collective explainability",
-                    "levelDescription": "The process of explainability is carried out among multiple communicating control/adaptation agents in a decentralized manner."
-                }
-            ]
-        }
     ]
 }
