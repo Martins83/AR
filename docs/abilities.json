@@ -29,41 +29,21 @@
             "abilityLevels": [
                 {
                     "level": 0,
-                    "levelName": "Mean failure dependability",
-                    "levelDescription": "The dependability of the system is based on the mean time to failure of its components. The dependability is based on the design of the system. The system is not able to increase its dependability autonomously. For Failure Dependability, this relates to the failure of all component parts of the system including software components. For Functional dependability, this relates to the frequency of failure of the system functions with respect to the task being undertaken, and for environmental dependability, it relates to the failure of the system to correctly interpret the environment. For Interaction dependability, it relates to the failure of the system to interact with a human in a functional or intuitive manner that is appropriate to the task."
-                },
-                {
-                    "level": 1,
-                    "levelName": "Fails safe",
-                    "levelDescription": "The system design is such that there are fail-safe mechanisms built into the system that will halt the operation responsible of the failure and place the system into a safe mode when failures are detected. This includes any failures caused by in-field updates. Dependability is reduced to the ability to fail safely in a proportion of failure modes. Fail-safe dependability relies on being able to detect failure."
-                },
-                {
-                    "level": 2,
-                    "levelName": "Failure recovery",
-                    "levelDescription": "The system is able to recover from a proportion of failures by restarting or resuming its operation."
-                },
-                {
-                    "level": 3,
-                    "levelName": "Graceful degradation",
-                    "levelDescription": "The system is able to recognize the impact of a proportion of failures on its function and operation and is able to compensate for the effect of the failure to maintain dependable operation. Function effectiveness or the ability to achieve optimal working may be impacted."
-                },
-                {
-                    "level": 4,
                     "levelName": "Task dependability",
                     "levelDescription": "The system is able to recognize the impact of a failure on the overall task it is undertaking and it is able to replan activities in order to minimize the impact of the failure on the task. This may also include self-repair as an alternative task."
                 },
                 {
-                    "level": 5,
+                    "level": 1,
                     "levelName": "Mission dependability",
                     "levelDescription": "The system is able to recognize the impact of a failure on the overall objectives of a mission and communicate the nature of the failure to other systems to minimize the impact on the mission objectives. In turn, the system is able to receive and interpret mission failures from other systems and re-task its actions to compensate."
                 },
                 {
-                    "level": 6,
+                    "level": 2,
                     "levelName": "Predictive dependability",
-                    "levelDescription": "The system is able to predict that a planned future action may result in a loss of dependability, or that the effect of the partial failure of a component can be mitigated by altering future actions. Thus, the system is able to extend its dependability by exploiting predictive mechanisms that permit taking an actionsbefore a failure is observed."
+                    "levelDescription": "The system is able to predict that a planned future action may result in a loss of dependability, or that the effect of the partial failure of a component can be mitigated by altering future actions. Thus, the system is able to extend its dependability by exploiting predictive mechanisms that permit taking an actions before a failure is observed."
                 },
 				{
-                    "level": 7,
+                    "level": 3,
                     "levelName": "Prescriptive dependability",
                     "levelDescription": "The system is able to make a more advanced use of predictive analysis that forecasts system dependability in the future. Prescriptive dependability analysis goes beyond simply predicting options in the predictive model. It actually evaluates a range of prescribed actions and the potential outcomes of each action, and it is able to choose the best actions that guarantee the highest dependability and mitigate future risks and take into account the potential outcomes of each decision option."
                 }
@@ -82,12 +62,12 @@
                 {
                     "level": 1,
                     "levelName": "Basic decisional autonomy",
-                    "levelDescription": "The system makes decisions based on basic perceptions and user input and chooses its behavior from predefined alternatives."
+                    "levelDescription": "The system makes decisions based on basic perceptions and human or artificial agent  input and chooses its behavior from predefined alternatives."
                 },
                 {
                     "level": 2,
                     "levelName": "Continuous basic decisional autonomy",
-                    "levelDescription": "The system alters the parameters of behavior in response to continuous input from perceptions or based on input control from a user interacting continuously with the system. The system may be able to override or ignore user input when certain criteria are encountered."
+                    "levelDescription": "The system alters the parameters of behavior in response to continuous input from perceptions or based on input control from a human or artificial agent  interacting continuously with the system. The system may be able to override or ignore the human or artificial agent  input when certain criteria are encountered."
                 },
                 {
                     "level": 3,
@@ -107,7 +87,7 @@
                 {
                     "level": 6,
                     "levelName": "Constrained task autonomy",
-                    "levelDescription": "The system adapts its behavior to accommodate task constraints. These might be negative impacts in terms of failed sensors, or the need to optimize power utilization or other physical resources the process depends on, (water, chemical agents, etc). Alternatively, these might be constraints imposed by sensing ability, the environment, or the user."
+                    "levelDescription": "The system adapts its behavior to accommodate task constraints. These might be negative impacts in terms of failed sensors, or the need to optimize power utilization or other physical resources the process depends on, (water, chemical agents, etc). Alternatively, these might be constraints imposed by sensing ability, the environment, or the human agent."
                 },
                 {
                     "level": 7,
@@ -133,168 +113,60 @@
         },
         {
             "abilityName": "Interaction",
-            "abilityDescription": "The ability of a system to interact physically, cognitively and socially either with users, operators or other systems around it. The ability to interact may be as simple as the use of a communication protocol, or as advanced as holding an interactive conversation in a social context. The ability to interact is critical to many areas of application. Interaction depends on both the medium of interaction and the context and flow of the interaction. The ability to interact takes place in three distinct ways: physical interaction, cognitive interaction and social interaction. The Interaction Ability consists of the following four types of interaction.",
+            "abilityDescription": "The ability of a system to interact physically, cognitively either with human or artificial agents or other systems around it. The ability to interact may be simple as the use of a communication protocol. The ability to interact is critical to many areas of application. Interaction depends on both the medium of interaction and the context and flow of the interaction. The ability to interact takes place in two distinct ways: physical or  cognitive interaction. The Interaction Ability consists of the following four types of interaction.",
             "hasSubAbilities": true,
             "subAbilities": [
                 {
                     "subAbilityName": "Human-system interaction",
-                    "subAbilityDescription": "The following set of levels relate to the interaction between users and the system. This set of ability levels are distinct from the cognitive human-system interaction levels, as they define the method of interaction independently of the cognitive context.",
+                    "subAbilityDescription": "The following set of levels relate to the interaction between human agents and the system. This set of ability levels are distinct from the cognitive human-system interaction levels, as they define the method of interaction independently of the cognitive context.",
                     "subAbilityLevels": [
                         {
                             "level": 0,
                             "levelName": "No interaction",
-                            "levelDescription": "It is possible that the system will effectively have no operational interaction with a user."
+                            "levelDescription": "It is possible that the system will effectively have no operational interaction with a human agent."
                         },
                         {
                             "level": 1,
                             "levelName": "Direct control",
-                            "levelDescription": "The user provides control of the system moment to moment. The system can translate, alter, or block these controls within parameters set by the user or system. The user controls are in the form of parameters that alter the control of the system. These parameters may be continuous quantities, or binary controls."
+                            "levelDescription": "The human agent provides control of the system moment to moment. The system can translate, alter, or block these controls within parameters set by the human agent or system. The human agent controls are in the form of parameters that alter the control of the system. These parameters may be continuous quantities, or binary controls."
                         },
                         {
                             "level": 2,
                             "levelName": "Direct physical interaction",
-                            "levelDescription": "The user controls the system by physically interacting with it. The system reacts to the user interaction by feeding back physical information to the user via the contact point."
+                            "levelDescription": "The human agent controls the system by physically interacting with it. The system reacts to the human agent interaction by feeding back physical information to the human agent via the contact point."
                         },
                         {
                             "level": 3,
                             "levelName": "Task selection",
-                            "levelDescription": "The system is able to execute pre-defined sequence of actions (tasks) autonomously. The user selects the subsequent action at the completion of the sequence of actions."
+                            "levelDescription": "The system is able to execute pre-defined sequence of actions (tasks) autonomously. The human agent selects the subsequent action at the completion of the sequence of actions."
                         },
                         {
                             "level": 4,
                             "levelName": "Traded autonomy",
-                            "levelDescription": "The system is able to operate autonomously during some parts of a task or in some tasks. Once this task or sub-task is complete the user will either select the subsequent task or intervene to control the system by direct interaction to carry out a task. This results in alternating sequences of autonomous and direct control of the system by the user."
+                            "levelDescription": "The system is able to operate autonomously during some parts of a task or in some tasks. Once this task or sub-task is complete the human agent will either select the subsequent task or intervene to control the system by direct interaction to carry out a task. This results in alternating sequences of autonomous and direct control of the system by the human agent."
                         },
                         {
                             "level": 5,
                             "levelName": "Task sequence control",
-                            "levelDescription": "The system is able to execute sub-tasks autonomously, these sub-tasks will involve a higher level of decisional autonomy than a pre-defined sequence of actions. On completion of the sub-task user interaction is required to select the next sub-task resulting in a sequence of actions that make up a completed task."
+                            "levelDescription": "The system is able to execute sub-tasks autonomously, these sub-tasks will involve a higher level of decisional autonomy than a pre-defined sequence of actions. On completion of the sub-task human agent interaction is required to select the next sub-task resulting in a sequence of actions that make up a completed task."
                         },
                         {
                             "level": 6,
                             "levelName": "Supervised autonomy",
-                            "levelDescription": "The system is able to execute a task autonomously in most operating conditions. The system is able to recognise when it is unable to proceed or when it requires user input to select alternative strategies or courses of action. These alternatives may involve periods of direct control."
+                            "levelDescription": "The system is able to execute a task autonomously in most operating conditions. The system is able to recognise when it is unable to proceed or when it requires human agent input to select alternative strategies or courses of action. These alternatives may involve periods of direct control."
                         },
                         {
                             "level": 7,
                             "levelName": "Task alternatives selection",
-                            "levelDescription": "The system is able to autonomously execute tasks but requires the user to select between strategic task alternatives in order to execute a mission."
+                            "levelDescription": "The system is able to autonomously execute tasks but requires the human agent to select between strategic task alternatives in order to execute a mission."
                         },
                         {
                             "level": 8,
                             "levelName": "Mission goal setting",
-                            "levelDescription": "The system is able to execute tasks to achieve a mission. The user is able to interact with the system to direct the overall objectives of the mission."
+                            "levelDescription": "The system is able to execute tasks to achieve a mission. The human agent is able to interact with the system to direct the overall objectives of the mission."
                         }
                     ]
                 },
-				{
-                    "subAbilityName": "Human-system interaction feedback",
-                    "subAbilityDescription": "The ability to command a system depends on the user’s perception of the state of the system. This set of levels defines how this state information can be fed back to a user who is operating the system.",
-                    "subAbilityLevels": [
-                        {
-                            "level": 0,
-                            "levelName": "No feedback",
-                            "levelDescription": "The system does not provide any feedback to the user"
-                        },
-                        {
-                            "level": 1,
-                            "levelName": "Basic feedback",
-                            "levelDescription": "The user is able to assess the state of the system by direct perception (by watching or listening). The system does not provide any means of feeding back information to the user."
-                        },
-                        {
-                            "level": 2,
-                            "levelName": "Data feedback",
-                            "levelDescription": "The system feedbacks visual information (visual or audio) about the state of the environment around the system based on data captured by the system. The user must interpret this information (visual imagery or audio signals) to assess the state of the system or its environment."
-                        },
-                        {
-                            "level": 3,
-                            "levelName": "Haptic feedback",
-                            "levelDescription": "The system is able to feedback on a physical force that represents the forces at the end effector of the system. The force feedback is delivered to the user via a single point of contact, for example a joystick."
-                        },
-                        {
-                            "level": 4,
-                            "levelName": "Multi-modal feedback",
-                            "levelDescription": "The system is able to provide multi-modal feedback to the operators by means of different synchronized feedback channels."
-                        }
-                    ]
-                },
-                {
-                    "subAbilityName": "System to system interaction",
-                    "subAbilityDescription": "The following set of levels relate to the interaction between systems in carrying out a task or mission. No distinction needs to be made between separate systems that communicate and dependent systems that carry out a task. However, there is a distinction between systems that rely on a central controller and those that use distributed decision-making.",
-                    "subAbilityLevels": [
-                        {
-                            "level": 0,
-                            "levelName": "No interaction",
-                            "levelDescription": "The system operates on its own without communication with another system."
-                        },
-                        {
-                            "level": 1,
-                            "levelName": "Communication of own status",
-                            "levelDescription": "Two or more systems communicate basic status information and task specific status. Status information is pre-defined for the task. The information communicated only relates to the state of the system within the task."
-                        },
-                        {
-                            "level": 2,
-                            "levelName": "Communication of task status",
-                            "levelDescription": "Two or more systems are able to communicate information about the task they are performing in terms of task completion, time to completion, and information about task barriers, resources etc. This information is at a high level and will impact on the planning of a common task, or tasks in a common space."
-                        },
-                        {
-                            "level": 3,
-                            "levelName": "Communication of environment information",
-                            "levelDescription": "Two or more systems share information about their environments, or share wider scale information that they have acquired or been given. The systems are able to assimilate the information and extract task-relevant knowledge from it."
-                        },
-                        {
-                            "level": 4,
-                            "levelName": "Team communication",
-                            "levelDescription": "Two or more systems are able to communicate task-level information during the execution of the task such that it is possible to implement dynamic planning between the systems in the team. Each system carries out its own tasks with awareness of the other systems in the team."
-                        },
-                        {
-                            "level": 5,
-                            "levelName": "Team coordination",
-                            "levelDescription": "Two or more systems are able to collaborate to achieve a task outcome that could not be achieved by either system alone, or by each system operating independently."
-                        }, 
-                        {
-                            "level": 6,
-                            "levelName": "Capability Communication",
-                            "levelDescription": "Systems are able to communicate their own task capabilities and utilise cooperative working between teams of heterogeneous systems where there is no prior knowledge of the composition of the team."
-                        }
-                    ]
-                },			
-				{
-                    "subAbilityName": "Human-system interaction safety",
-                    "subAbilityDescription": "The following levels only apply to systems that have an inherent level of unsafety in the interaction between the human and the system. For example, if a system is safe at Level 0 then there is no need for it to reach Level 1 safety. For this reason, each successive level relates to systems that exhibit increased levels of potential harm. It is assumed that all systems meet safety criteria appropriate to their environment with respect to electrical and battery safety requirements, typically specified by European CE marking criteria. It is also expected that appropriate safety criteria have been applied with respect to consumables used by the system, for example heated liquids, liquids under pressure, or chemical agents.",
-                    "subAbilityLevels": [
-                        {
-                            "level": 0,
-                            "levelName": "Intrinsic safety",
-                            "levelDescription": "The mechanism of the system is safe because by design it cannot damage a person at any time during its operating cycle. The maintenance of this level of safety does not depend on software."
-                        },
-                        {
-                            "level": 1,
-                            "levelName": "Basic safety",
-                            "levelDescription": "The system operates with a basic level of safety appropriate to the task. Maintaining safe operation may depend on the operator being able to stop operation or continuously enable the operating cycle, e.g. a red button able to stop operation. The maintenance of this level of safety does not depend on software."
-                        },
-                        {
-                            "level": 2,
-                            "levelName": "Basic operator safety",
-                            "levelDescription": "The system is made safe for the operator by physically bounding the operating space of the system. Access gates trigger stop commands to the system. The system will not operate unless the bounding space is closed."
-                        },
-                        {
-                            "level": 3,
-                            "levelName": "User detection",
-                            "levelDescription": "The system is informed or is able to understand when a user enters the work zone. The system operates safely, e.g. changing to a safety mode, while the user is present in the operating zone."
-                        },
-                        {
-                            "level": 4,
-                            "levelName": "Workspace detection",
-                            "levelDescription": "The system operates within a well-defined space where a zone of safe operation is identified and programmed into the system. While the system is occupying the safe zone it operates safely. The system may also use sensing to detect that humans do not enter the unsafe zone."
-                        },
-                        {
-                            "level": 5,
-                            "levelName": "Dynamic user detection",
-                            "levelDescription": "The system or its support systems detect humans within its operating zone and dynamically defines a safe zone that envelopes the user where the system controls its operation to be safe."
-                        }
-                    ]
-                }
             ]
         },
 		{
