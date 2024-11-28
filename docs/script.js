@@ -458,7 +458,7 @@ async function exportJson() {
 }
 
 async function getJSONAbilities() {
-    const response = await fetch("https://github.com/Martins83/AR/blob/7ebb21c08b88b48c7422384c0036de57376e3abc/docs/abilities.json"); //https://github.com/Martins83/AR/blob/7ebb21c08b88b48c7422384c0036de57376e3abc/docs/abilities.json
+    const response = await fetch("//https://github.com/Martins83/AR/blob/7ebb21c08b88b48c7422384c0036de57376e3abc/docs/abilities.json"); //https://github.com/Martins83/AR/blob/7ebb21c08b88b48c7422384c0036de57376e3abc/docs/abilities.json
     const json = await response.json();
     return json.data;
 }
