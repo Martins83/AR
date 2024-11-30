@@ -297,7 +297,7 @@ async function draw() {
 async function exportPDFStandard() {
 	// Get data and iterate over them
     var data = await getJSONAbilities();
-    var html = "<html><head><meta charset='UTF-8'><link rel='stylesheet' href='style.css'><style> td, th {border: 1px solid black;} </style></head><body><h1>LENS4PEMS<h1>";
+    var html = "<html><head><meta charset='UTF-8'><link rel='stylesheet' href='style.css'><style> td, th {border: 1px solid black;} </style></head><body><h1>fRAme<h1>";
     for (let i=0; i<data.length; i++) {
         if (data[i].hasSubAbilities) {
             // Ability with sub abilities 
@@ -353,7 +353,7 @@ async function pdf() {
 
     // Get data and iterate over them
     var data = await getJSONAbilities();
-    var html = "<html><head><meta charset='UTF-8'><link rel='stylesheet' href='style.css'><style> .tb {border: 1px solid black;} </style></head><body><h1>LENS4PEMS<h1>";
+    var html = "<html><head><meta charset='UTF-8'><link rel='stylesheet' href='style.css'><style> .tb {border: 1px solid black;} </style></head><body><h1>fRAme<h1>";
     for (let i=0; i<data.length; i++) {
         if (data[i].hasSubAbilities) {
             // Ability with sub abilities 
@@ -451,7 +451,7 @@ async function exportJson() {
 	a.href = URL.createObjectURL(new Blob([JSON.stringify(abilitiesValues, null, 2)], {
 		type: "text/plain"
 	}));
-	a.setAttribute("download", "LENS.json");
+	a.setAttribute("download", "fRAme.json");
 	document.body.appendChild(a);
 	a.click();
 	document.body.removeChild(a);
