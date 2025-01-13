@@ -105,9 +105,9 @@ function fillSubAbility(ability) {
         let heading_1 = document.createElement('th');
         heading_1.innerHTML = "Level";
         let heading_2 = document.createElement('th');
-        heading_2.innerHTML = "Achieved?";
+        heading_2.innerHTML = "Response";
         let heading_3 = document.createElement('th');
-        heading_3.innerHTML = "Scenario";
+        heading_3.innerHTML = "Example";
         row_1.appendChild(heading_1);
         row_1.appendChild(heading_2);
         row_1.appendChild(heading_3);
