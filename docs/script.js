@@ -366,7 +366,7 @@ async function pdf() {
                 html += "<p>" + data[i].subAbilities[j].subAbilityDescription + "</p><br>";
 
                 // Levels
-                html += "<table style='border: 1px solid black; border-collapse: collapse;'> <tr><th class='tb'>Level</th><th class='tb'>Achieved?</th><th class='tb'>Scenario</th></tr>"
+                html += "<table style='border: 1px solid black; border-collapse: collapse;'> <tr><th class='tb'>Level</th><th class='tb'>Response</th><th class='tb'>Example</th></tr>"
 
                 for (let index = 0; index < data[i].subAbilities[j].subAbilityLevels.length; ++index) {
                     const element = data[i].subAbilities[j].subAbilityLevels[index];        
