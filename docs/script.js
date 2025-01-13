@@ -142,9 +142,9 @@ function fillNormalAbility(ability) {
     let heading_1 = document.createElement('th');
     heading_1.innerHTML = "Level";
     let heading_2 = document.createElement('th');
-    heading_2.innerHTML = "Achieved?";
+    heading_2.innerHTML = "Response";
     let heading_3 = document.createElement('th');
-    heading_3.innerHTML = "Scenario";
+    heading_3.innerHTML = "Example";
     row_1.appendChild(heading_1);
     row_1.appendChild(heading_2);
     row_1.appendChild(heading_3);
@@ -386,7 +386,7 @@ async function pdf() {
             html += "<p>" + data[i].abilityDescription + "</p><br>";
 
             // Levels
-            html += "<table style='border: 1px solid black; border-collapse: collapse;'> <tr><th class='tb'>Level</th><th class='tb'>Achieved?</th><th class='tb'>Scenario</th></tr>"
+            html += "<table style='border: 1px solid black; border-collapse: collapse;'> <tr><th class='tb'>Level</th><th class='tb'>Response</th><th class='tb'>Example</th></tr>"
 
             for (let index = 0; index < data[i].abilityLevels.length; ++index) {
                 const element = data[i].abilityLevels[index];        
