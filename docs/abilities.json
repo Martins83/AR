@@ -113,12 +113,12 @@
         },
         {
             "abilityName": "Interaction",
-            "abilityDescription": "The ability of a system to interact physically, cognitively either with human or artificial agents or other systems around it. The ability to interact may be simple as the use of a communication protocol. The ability to interact is critical to many areas of application. Interaction depends on both the medium of interaction and the context and flow of the interaction. The ability to interact takes place in two distinct ways: physical or  cognitive interaction. The Interaction Ability consists of the following four types of interaction.",
+            "abilityDescription": "The ability of a system to interact physically, cognitively either with human or artificial agents or other systems around it. The ability to interact may be simple as the use of a communication protocol. The ability to interact is critical to many areas of application. Interaction depends on both the medium of interaction and the context and flow of the interaction. The ability to interact takes place in two distinct ways: physical or  cognitive interaction.",
             "hasSubAbilities": true,
             "subAbilities": [
                 {
                     "subAbilityName": "Human-system interaction",
-                    "subAbilityDescription": "The following set of levels relate to the interaction between human agents and the system. This set of ability levels are distinct from the cognitive human-system interaction levels, as they define the method of interaction independently of the cognitive context.",
+                    "subAbilityDescription": "The following set of levels relate to the interaction between human agents and the system.",
                     "subAbilityLevels": [
                         {
                             "level": 0,
@@ -351,7 +351,7 @@
                 },
 				{
                     "subAbilityName": "Reasoning",
-                    "subAbilityDescription": "The reasoning ability is the glue that holds the cognitive structures together. Perception, knowledge acquisition, interpretation and envisioning all rely to a certain extent on the ability to reason from uncertain data. As application tasks become more complex the need to provide task and mission-level reasoning increases.",
+                    "subAbilityDescription": "The reasoning ability is the glue that holds the cognitive structures together. Perception, and knowledge acquisition all rely to a certain extent on the ability to reason from uncertain data. As application tasks become more complex the need to provide task and mission-level reasoning increases.",
                     "subAbilityLevels": [
                         {
                             "level": 0,
